@@ -4,6 +4,9 @@
 - [Index.cshtml](./CS/AspNetCoreDashboard_UnderlyingData/Pages/Index.cshtml)
 
 # ASP.NET Core Dashboard - How to obtain a dashboard item's underlying data for a clicked visual element
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/363112272/)**
+<!-- run online end -->
 
 The example uses the Dashboard Control's [client-side API](https://docs.devexpress.com/Dashboard/400192/web-dashboard/aspnet-core-dashboard-control/client-side-api-overview) to get underlying data that corresponds to a particular visual element.
 
