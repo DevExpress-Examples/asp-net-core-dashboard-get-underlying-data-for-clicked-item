@@ -1,3 +1,17 @@
+function onBeforeRender(sender) {
+    var dashboardControl = sender;
+
+    var viewerApiExtension = dashboardControl.findExtension('viewerApi');
+    if (viewerApiExtension)
+        viewerApiExtension.on('itemClick', onItemClick);
+
+    $("#myPopup").dxPopup({
+        width: 800, height: 600,
+        title: "Underlying data",
+        showCloseButton: true
+    });
+}
+
 function onItemClick(args) {
     var underlyingData = [];
 
@@ -25,13 +39,5 @@ function onItemClick(args) {
         $popupContent.empty();
         $popupContent.append($grid);
         popup.show();
-    });
-}
-
-function onBeforeRender() {
-    $("#myPopup").dxPopup({
-        width: 800, height: 600,
-        title: "Underlying data",
-        showCloseButton: true
     });
 }
