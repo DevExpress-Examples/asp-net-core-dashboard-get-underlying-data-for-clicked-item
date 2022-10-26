@@ -3,6 +3,7 @@ using DevExpress.DashboardCommon;
 using DevExpress.DashboardWeb;
 using DevExpress.DataAccess.Excel;
 using DevExpress.DataAccess.Sql;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
 
 namespace AspNetCoreDashboard_UnderlyingData {
